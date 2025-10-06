@@ -26,6 +26,10 @@ jobs:
           version: 10
           run_install: false
 
+      - name: Install additional dependencies for Electron
+        if: startsWith(matrix.os, 'ubuntu')
+        run: sudo apt-get install -y libnss3 libatk-bridge2.0-0 libgtk-3-0 libasound2
+
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
