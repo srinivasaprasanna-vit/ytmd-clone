@@ -2,7 +2,7 @@
   "name": "youtube-music-clone",
   "desktopName": "com.propgsp.youtube_music",
   "productName": "YouTube Music Clone",
-  "version": "0.01",
+  "version": "3.10.0",
   "description": "YouTube Music Desktop App with customized plugins",
   "main": "./dist/main/index.js",
   "type": "module",
@@ -14,6 +14,7 @@
     "url": "https://github.com/srinivasaprasanna-vit/ytmd-clone"
   },
   "scripts": {
+    "version:auto": "pnpm version patch && pnpm changelog",
     "test": "pnpm playwright test",
     "test:debug": "pnpm cross-env DEBUG=pw:*,-pw:test:protocol playwright test",
     "build": "pnpm electron-vite build",
