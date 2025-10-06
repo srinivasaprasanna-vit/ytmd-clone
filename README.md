@@ -1,8 +1,3 @@
-IM an student learning who is programming. This is an customized version of this https://github.com/ytmd-devs/ytmd repository. 
-No liscense is applied for this modified code but the credits must be given to the author https://github.com/ytmd-devs/ytmd.
-(You can more find of author in README_origin.md)
-
-Here’s an enhanced version of your README that’s clear, respectful to the original authors, and beginner-friendly while reflecting your customization:
 
 ---
 
