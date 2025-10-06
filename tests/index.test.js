@@ -13,6 +13,7 @@ test('YouTube Music App - With default settings, app is launched and visible', {
     args: [
       appPath,
       '--no-sandbox',
+      '--disable-setuid-sandbox',
       '--disable-gpu',
       '--whitelisted-ips=',
       '--disable-dev-shm-usage',
