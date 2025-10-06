@@ -20,17 +20,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
           run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -78,17 +78,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
           run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -100,4 +100,3 @@ jobs:
         run: |
           echo "VERSION_HASH=$(git rev-parse -q --verify 'refs/tags/${{ env.VERSION_TAG }}')" >> $GITHUB_ENV
           echo "CHANGELOG_ANCHOR=$(echo $VERSION_TAG | sed -e 's/\\.//g')" >> $GITHUB_ENV
-
