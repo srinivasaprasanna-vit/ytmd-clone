@@ -7,13 +7,12 @@ process.env.NODE_ENV = 'test';
 
 const appPath = path.resolve(import.meta.dirname, '..');
 
-test('YouTube Music App - With default settings, app is launched and visible', { timeout: 60000 }, async () => {
+test('YouTube Music App - With default settings, app is launched and visible', async () => {
   const app = await electron.launch({
     cwd: appPath,
     args: [
       appPath,
       '--no-sandbox',
-      '--disable-setuid-sandbox',
       '--disable-gpu',
       '--whitelisted-ips=',
       '--disable-dev-shm-usage',
@@ -32,7 +31,7 @@ test('YouTube Music App - With default settings, app is launched and visible', {
   // const title = await window.title();
   // expect(title.replaceAll(/\s/g, ' ')).toEqual('YouTube Music');
 
-  const url = await window.url();
+  const url = window.url();
   expect(url.startsWith('https://music.youtube.com')).toBe(true);
 
   await app.close();

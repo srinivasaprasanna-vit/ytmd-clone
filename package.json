@@ -1,20 +1,19 @@
 {
-  "name": "youtube-music-clone",
-  "desktopName": "com.propgsp.youtube_music",
-  "productName": "YouTube Music Clone",
-  "version": "3.10.0",
-  "description": "YouTube Music Desktop App with customized plugins",
+  "name": "youtube-music",
+  "desktopName": "com.github.th_ch.youtube_music",
+  "productName": "YouTube Music",
+  "version": "3.11.0",
+  "description": "YouTube Music Desktop App - including custom plugins",
   "main": "./dist/main/index.js",
   "type": "module",
-  "license": "",
-  "repository": "srinivasaprasanna-vit/ytmd-clone",
+  "license": "MIT",
+  "repository": "th-ch/youtube-music",
   "author": {
-    "name": "srinivasaprasanna-vit",
-    "email": "srinivasaprasanna-vit@users.noreply.github.com ",
-    "url": "https://github.com/srinivasaprasanna-vit/ytmd-clone"
+    "name": "th-ch",
+    "email": "th-ch@users.noreply.github.com",
+    "url": "https://github.com/th-ch/youtube-music"
   },
   "scripts": {
-    "version:auto": "pnpm version patch && pnpm changelog",
     "test": "pnpm playwright test",
     "test:debug": "pnpm cross-env DEBUG=pw:*,-pw:test:protocol playwright test",
     "build": "pnpm electron-vite build",
