@@ -1,4 +1,6 @@
 ---
+#Note
+ I WILL ADD PLUGINS ASAP
 
 # 🎵 YTMD Custom – A User-made Fork/Clone of YTMD
 
