@@ -53,6 +53,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 
 This project is based on the incredible work by the [YTMD Developers](https://github.com/ytmd-devs/ytmd).  
 Please refer to [`README_origin.md`](./README_origin.md) for full attribution and original 
+Please consider contributing to the root repositories of this clone and help the root developers.
 
 ---
 
