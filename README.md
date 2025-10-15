@@ -1,5 +1,7 @@
 ---
-#Note
+#Note: 
+
+
  I WILL ADD PLUGINS ASAP
 
 # 🎵 YTMD Custom – A User-made Fork/Clone of YTMD
@@ -50,7 +52,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 ## 🙏 Credits
 
 This project is based on the incredible work by the [YTMD Developers](https://github.com/ytmd-devs/ytmd).  
-Please refer to [`README_origin.md`](./README_origin.md) for full attribution and original documentation.
+Please refer to [`README_origin.md`](./README_origin.md) for full attribution and original 
 
 ---
 
